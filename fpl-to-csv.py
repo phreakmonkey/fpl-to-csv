@@ -35,7 +35,7 @@ def main():
               name = wprefix + name[2:]
             lat = waypoint.find(namespace+"lat").text
             lon = waypoint.find(namespace+"lon").text
-            ofile.write(f"{name},,{lat},{lon}\r\n")
+            ofile.write(f"{name.upper()},,{lat},{lon}\r\n")
       print("Done.")
       break
   else:
